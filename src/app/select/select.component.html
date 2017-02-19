@@ -1,5 +1,5 @@
 <div class="element-left">
-  <div class="element-bg-img"><img src="images/1.jpg" alt="" class="img-responsive"> </div>
+  <div class="element-bg-img"><img src="../../assets/1.jpg" alt="" class="img-responsive"> </div>
   <div class="element-left-bottom">
     <div class="ele-strip">
       <ul>
@@ -14,47 +14,47 @@
       <span class="line"> </span>
       <div class="activity_box">
         <div class="scrollbar" id="style-2">
-          <div class="activity-row">
+          <div class="activity-row" (click)="selectCity(cities[0])">
             <div class="activity-desc">
-              <h5>Resort Address</h5>
-              <p>Sed perspiciatis</p>
-              <p>Et harum quidem</p>
-              <h6>Tel:+1285 968 685</h6>
+              <h5>{{cities[0].name}}</h5>
+              <!--<p>Sed perspiciatis</p>-->
+              <!--<p>Et harum quidem</p>-->
+              <!--<h6>Tel:+1285 968 685</h6>-->
             </div>
             <div class="activity-img">
               <ul>
-                <li><img src='images/res.jpg'  alt=""/></li>
-                <li><img src='images/r1.jpg'  alt=""/></li>
+                <li><img src='{{cities[0].photo}}'  alt=""/></li>
+                <li><img src='{{cities[0].hotelPhoto}}'  alt=""/></li>
               </ul>
             </div>
             <div class="clear"> </div>
           </div>
-          <div class="activity-row">
+          <div class="activity-row" (click)="selectCity(cities[1])">
             <div class="activity-desc">
-              <h5>Resort Address</h5>
-              <p>Sed ut perspiciatis</p>
-              <p>Et harum quidem</p>
-              <h6>Tel:+1285 968 685</h6>
+              <h5>{{cities[1].name}}</h5>
+              <!--<p>Sed ut perspiciatis</p>-->
+              <!--<p>Et harum quidem</p>-->
+              <!--<h6>Tel:+1285 968 685</h6>-->
             </div>
             <div class="activity-img">
               <ul>
-                <li><img src='images/res.jpg'  alt=""/></li>
-                <li><img src='images/r1.jpg'  alt=""/></li>
+                <li><img [src]='cities[1].photo'  alt=""/></li>
+                <li><img [src]='cities[1].hotelPhoto'  alt=""/></li>
               </ul>
             </div>
             <div class="clear"> </div>
           </div>
-          <div class="activity-row">
+          <div class="activity-row" (click)="selectCity(cities[2])">
             <div class="activity-desc">
-              <h5>Resort Address</h5>
-              <p>Sed ut perspiciatis</p>
-              <p>Et harum quidem</p>
-              <h6>Tel:+1285 968 685</h6>
+              <h5>{{cities[2].name}}</h5>
+              <!--<p>Sed ut perspiciatis</p>-->
+              <!--<p>Et harum quidem</p>-->
+              <!--<h6>Tel:+1285 968 685</h6>-->
             </div>
             <div class="activity-img">
               <ul>
-                <li><img src='images/res.jpg'  alt=""/></li>
-                <li><img src='images/r1.jpg'  alt=""/></li>
+                <li><img [src]='cities[2].photo'  alt=""/></li>
+                <li><img [src]='cities[2].hotelPhoto' alt=""/></li>
               </ul>
             </div>
             <div class="clear"> </div>
