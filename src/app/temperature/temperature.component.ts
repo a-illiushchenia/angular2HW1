@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-temperature',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./temperature.component.css']
 })
 export class TemperatureComponent implements OnInit {
+
+  @Input("city")
+  public city: hw1.City;
 
   constructor() { }
 

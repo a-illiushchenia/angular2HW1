@@ -1,9 +1,9 @@
 <h1>Hot Weather Widget</h1>
 <div class="element">
-  <app-select></app-select>
+  <app-select (clickOnCity)="selectCity($event)"></app-select>
   <div class="element-right">
-    <app-temperature></app-temperature>
-    <app-description></app-description>
+    <app-temperature [city]="select"></app-temperature>
+    <app-description [city]="select"></app-description>
   </div>
   <div class="clear"> </div>
 </div>
